@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.main-con {
+    background-color: #CE9461;
+    font-family: "Roboto";
+}
+
+.table-section {
+    background-color: #4D4C7D;
+    width: 30vw;
+    height: 100vh;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.popup-head {
+    font-family: Roboto;
+    color: #363062;
+}
+
+.colorr {
+    color: white;
+}
+
+.minus {
+    margin-left: 5px;
+    background-color: white;
+    color: #363062;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #363062;
+    border-radius: 2px;
+    height: 25px;
+    width: 27px;
+    font-weight: 500;
+
+}
+
+.plus {
+    margin-left: 5px;
+    background-color: white;
+    color: #363062;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #363062;
+    border-radius: 2px;
+    height: 25px;
+    width: 27px;
+    font-weight: 500;
+
+}
+
+.dlt {
+    margin-left: 5px;
+    background-color: #363062;
+    color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #363062;
+    border-radius: 2px;
+    height: 25px;
+    width: 35px;
+    font-weight: 500;
+    text-align: center;
+   
+
+}
+
+.o-details {
+    font-family: Roboto;
+    color: #4D4C7D;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #4D4C7D;
+
+
+}
+
+.custom-button {
+    background-color: #363062;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.menu-section {
+    background-color: #FFFDF9;
+    width: 70vw;
+    height: 100vh;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.table-section-head {
+    text-align: center;
+    color: #FFFDF9;
+
+    font-size: 30px;
+}
+
+.menu-section-head {
+    text-align: center;
+    color: #363062;
+
+    font-size: 30px;
+}
+
+.table-container {
+    border-radius: 5px;
+
+    background-color: #363062;
+    padding: 20px;
+    color: #FFFDF9;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.table-elements {
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: center;
+    border-radius: 5px;
+
+    padding: 15px;
+
+    border-width: 2px;
+    border-color: #FCFFE7;
+
+}
+
+.menu-items {
+    margin: 15px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 20px;
+
+    color: #363062;
+    border-radius: 5px;
+
+}
+
+.table-top {
+    text-align: center;
+}
+
+.table-search {
+    text-align: center;
+    border-style: none;
+    background-color: #FFFDF9;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+
+    height: 45px;
+}
+
+.menu-search {
+    text-align: center;
+    border-style: none;
+    background-color: #FFFDF9;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #363062;
+    width: 400px;
+    height: 45px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+#menuSection::-webkit-scrollbar-track {
+
+    background-color: #F5F5F5;
+}
+
+#menuSection::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+#menuSection::-webkit-scrollbar-thumb {
+    background-color: #4D4C7D;
+
+}
+
+
+
+#tableSection::-webkit-scrollbar-track {
+
+    background-color: #4D4C7D;
+}
+
+#tableSection::-webkit-scrollbar {
+    width: 10px;
+    background-color: #4D4C7D;
+}
+
+#tableSection::-webkit-scrollbar-thumb {
+    background-color: #E9D5DA;
+
+}
+
+.marginupp{
+    margin-top:11px;
+}
+
+
+/* .transition:after {
+    content: "";
+    background: black;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .transition:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  } */
+
+

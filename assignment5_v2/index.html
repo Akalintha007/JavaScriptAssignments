@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="d-flex flex-row main-con">
+        <div class="table-section" id="tableSection">
+            <div class="table-top">
+                <h1 class="table-section-head">TABLES</h1>
+                <input class="table-search" onkeyup="searchTables()" id="tableSearch" type="text" placeholder="Search">
+            </div>
+
+            <!--  <div class="table-container" id="table1">
+               <h2>Table-1</h2>
+               <div class="table-elements">
+                   <p class="mt-2">Total Items: <span id="couunt1">00</span> | Price: Rs <span id="price1">00</span>/-</p>
+                        
+               </div> -->
+
+
+
+
+        </div>
+        <div class="menu-section " id="menuSection">
+            <div class="table-top">
+                <h1 class="menu-section-head">MENU</h1>
+                <input class="menu-search" onkeyup="searchMenu()" id="menuSearch" type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="modal fade " id="popUp1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="o-details" id="exampleModalLongTitle"><span class="popup-head">Table-1</span> Order Details</h5>
+                        <button type="button" class="close" data-dismiss="modal" onclick="reload()" aria-label="Close">
+                            <span aria-hidden="true" >&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th scope="col">S.No</th>
+                                    <th scope="col">Item</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">No of Servings</th>
+                                    <th scope="col">Remove</th>
+                                </tr>
+                            </thead>
+                            <tbody id="orderList1" >
+                                 <!-- <tr>
+                             <th scope="row"></th>
+                             <td></td>
+                             <td></td>
+                             <td>
+                                 <div class="d-flex flex-row">
+                                     <p></p>
+                                     
+                                     <button class="minus">-</button>
+                                     <button class="plus">+</button>
+                                 </div>
+                                 
+                             </td>
+                             <td><button class="dlt"><i id="itemName" class="material-icons w3-xlarge colorr">delete</i></button></td>
+                           </tr> -->
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn custom-button" onclick="clearTable1()">Generate Bill</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="popUp2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="o-details" id="exampleModalLongTitle"><span class="popup-head">Table-2</span> Order Details</h5>
+                        <button type="button" class="close"  onclick="reload()"data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" >&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th scope="col">S.No</th>
+                                    <th scope="col">Item</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">No of Servings</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody id="orderList2">
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn custom-button" onclick="clearTable2()">Generate Bill</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="popUp3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="o-details" id="exampleModalLongTitle"><span class="popup-head">Table-3</span> Order Details</h5>
+                        <button type="button" onclick="reload()" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" >&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th scope="col">S.No</th>
+                                    <th scope="col">Item</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">No of Servings</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody id="orderList3">
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn custom-button" onclick="clearTable3()">Generate Bill</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="popUp4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="o-details" id="exampleModalLongTitle"><span class="popup-head">Table-4</span> Order Details</h5>
+                        <button type="button" class="close" onclick="reload()" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" >&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th scope="col">S.No</th>
+                                    <th scope="col">Item</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">No of Servings</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody id="orderList4">
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn custom-button"onclick="clearTable4()">Generate Bill</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="popUp5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="o-details" id="exampleModalLongTitle"><span class="popup-head">Table-5</span> Order Details</h5>
+                        <button type="button" onclick="reload()" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" >&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th scope="col">S.No</th>
+                                    <th scope="col">Item</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">No of Servings</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody id="orderList5">
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn custom-button"onclick="clearTable5()">Generate Bill</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

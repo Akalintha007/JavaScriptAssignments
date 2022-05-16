@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+     
+</head>
+
+<body>
+    <div class="d-flex flex-row main-con">
+        <div class="table-section" id="tableSection">
+            <div class="table-top">
+                <h1 class="table-section-head">TABLES</h1>
+                <div>
+                    <input class="table-search" type="text"id="tableSearch" placeholder="Search">
+                    <button onclick = "searchMenu(document.getElementById('tableSearch').value)"> search</button>  
+                </div>
+                
+            </div>
+
+            <!-- <div class="table-container" id="table1" ondragover="allowDrop(event)" ondrop="drop(event,table1Data.name)">
+                <h2>Table-1</h2>
+                <div class="table-elements">
+                    <p class="mt-2">Total Items: <span id="couunt1">00</span> | Price: Rs <span id="price1">00</span>/-</p>
+
+                </div>
+            </div> -->
+            <!-- <div class="table-container" id="table2">
+                <h2>Table-2</h2>
+                <div class="table-elements">
+                    <p class="mt-2">Total Items: <span id="couunt3">00</span> | Price: Rs <span id="price3">00</span>/-</p>
+                </div>
+            </div>-->
+            <!-- <div class="table-container" id="table3" draggable="true">
+                <h2>Table-3</h2>
+                <div class="table-elements">
+                    <p class="mt-2">Total Items: <span id="couunt3">00</span> | Price: Rs <span id="price3">00</span>/-</p>
+                </div>
+            </div>
+            <div class="table-container" id="table4" draggable="true">
+                <h2>Table-4</h2>
+                <div class="table-elements">
+                    <p class="mt-2">Total Items: <span id="couunt4">00</span> | Price: Rs <span id="price4">00</span>/-</p>
+                </div>
+            </div>
+            <div class="table-container" id="table5" draggable="true">
+                <h2>Table-5</h2>
+                <div class="table-elements">
+                    <p class="mt-2">Total Items: <span id="couunt5">00</span> | Price: Rs <span id="price5">00</span>/-</p>
+                </div>
+            </div>  -->
+
+
+        </div>
+        <div class="menu-section " id="menuSection">
+            <div class="table-top">
+                <h1 class="menu-section-head">MENU</h1>
+                <input class="menu-search" type="text" placeholder="Search">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- <script src="table2.js"></script> -->
+</body>
+
+</html>
